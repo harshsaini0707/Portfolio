@@ -19,9 +19,6 @@ import {
   icons
 } from 'lucide-react';
 import { TypeAnimation } from 'react-type-animation';
-import AgriSphere from "../src/assets/AgriSphere.png"
-import Echomind from "../src/assets/Echomind.png"
-import GitSync from "../src/assets/GitSync.png"
 import { GiBrain } from "react-icons/gi";
 import { FaReact ,FaNodeJs ,FaJsSquare,FaHtml5 ,FaBootstrap,FaJava,FaGitAlt ,FaGithub    } from "react-icons/fa";
 import { SiMongodb ,SiTypescript ,SiExpress ,SiTailwindcss ,SiShadcnui,SiPostman ,SiRedux } from "react-icons/si";
@@ -39,7 +36,7 @@ const Portfolio = () => {
       tech:  ["Gemini API","React", "MongoDB", "Tailwind CSS","Express", "Node.js" ,"Weather API " ,"RazorPay"],
       github: "https://github.com/harshsaini0707/AgriSphere",
       live: "https://agri-sphere-mu.vercel.app/",
-      image: AgriSphere
+      image: 'https://sdmntprsouthcentralus.oaiusercontent.com/files/e2906f363071139_00000000-4c6c-61f7-8888-ea161879edbe/drvs/thumbnail/raw?se=2025-07-15T06%3A00%3A12Z&sp=r&sv=2024-08-04&sr=b&scid=9a5a5ce0-9930-53c8-8323-816d38c473c7&skoid=5cab1ff4-c20d-41dc-babb-df0c2cc21dd4&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-15T02%3A23%3A54Z&ske=2025-07-16T02%3A23%3A54Z&sks=b&skv=2024-08-04&sig=4o05tKOLK8aIInDgPvHDl50s1YVU%2B3W789V/fP5quCo%3D'
     },
          {
   title: "GitSync.ai",
@@ -47,7 +44,7 @@ const Portfolio = () => {
   tech: ["Next.js", "Prisma", "PostgreSQL","Neon","Vector embedding","Langchain" , "Rag" , "Gemini", "Tailwind CSS", "OpenAI", "Cloudinary", "Mistral", "Vercel", "Typescript" , "Zod"],
   github: "https://github.com/harshsaini0707/Gitsync.ai",
   live: "https://gitsync-ai.vercel.app/",             
-  image: GitSync
+  image: 'https://sdmntprnorthcentralus.oaiusercontent.com/files/3cdf717c2a96ee0_00000000-73e4-622f-8185-a491c19a0be1/drvs/thumbnail/raw?se=2025-07-15T06%3A00%3A12Z&sp=r&sv=2024-08-04&sr=b&scid=00b610be-6e58-5224-b49d-b87858b1b85b&skoid=5cab1ff4-c20d-41dc-babb-df0c2cc21dd4&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-15T02%3A23%3A32Z&ske=2025-07-16T02%3A23%3A32Z&sks=b&skv=2024-08-04&sig=4RcZ2lYH3WQ2dhxlIs9HsQNxkRLvjZjM5BLDe9d656A%3D'
 },
     {
       title: "EchoMind.ai",
@@ -55,7 +52,7 @@ const Portfolio = () => {
       tech: ["Gemini API","Sarvam TTS model","Cloudinary","React", "MongoDB", "Tailwind CSS","Express", "Node.js" , " pdf-parse"],
       github: "https://github.com/harshsaini0707/EchoMind.ai",
       live: "https://echo-mind-ai.vercel.app/",
-      image:  Echomind
+      image:  'https://sdmntprwestus3.oaiusercontent.com/files/b507c1d584fd869_00000000-4d78-61fd-999c-bbad962e8047/drvs/thumbnail/raw?se=2025-07-15T06%3A00%3A12Z&sp=r&sv=2024-08-04&sr=b&scid=fc2308ce-bb4f-5b08-aeb2-5134041cfd66&skoid=5cab1ff4-c20d-41dc-babb-df0c2cc21dd4&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-14T12%3A56%3A57Z&ske=2025-07-15T12%3A56%3A57Z&sks=b&skv=2024-08-04&sig=bPUDTNSw4XEmqgycaZVKTAoLmBAExnNUkAPDok33NwQ%3D'
     },
    
 
