@@ -17,7 +17,7 @@ import {
 import { TypeAnimation } from 'react-type-animation';
 import { GiBrain } from "react-icons/gi";
 import { FaReact ,FaNodeJs ,FaJsSquare,FaHtml5 ,FaBootstrap,FaJava,FaGitAlt ,FaGithub    } from "react-icons/fa";
-import { SiMongodb ,SiTypescript ,SiExpress ,SiTailwindcss ,SiShadcnui,SiPostman ,SiRedux, SiPrisma } from "react-icons/si";
+import { SiMongodb ,SiTypescript ,SiExpress ,SiTailwindcss ,SiShadcnui,SiPostman ,SiRedux, SiPrisma, SiZod } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import Agrisphere from '../src/assets/AgriSphere.png'
 import EchoMind from '../src/assets/EchoMind.png'
@@ -71,13 +71,14 @@ const skills = [
   { name: "JavaScript", icon: FaJsSquare, color: "#F7DF1E", bgColor: "#fffbe6" },
   { name: "HTML", icon: FaHtml5, color: "#E34F26", bgColor: "#ffe8e2" },
   { name: "BootStrap", icon: FaBootstrap, color: "#7952B3", bgColor: "#f0e8ff" },
-  { name: "Shadcn/UI", icon: SiShadcnui, color: "#ffffff", bgColor: "#f0f0f0" },
+  { name: "Shadcn UI", icon: SiShadcnui, color: "#ffffff", bgColor: "#f0f0f0" },
   { name: "PostMan", icon: SiPostman, color: "#FF6C37", bgColor: "#ffe6dc" },
   { name: "Java", icon: FaJava, color: "#007396", bgColor: "#e1ecf4" },
   { name: "Redux Toolkit", icon: SiRedux, color: "#007396", bgColor: "#ffe6dc"},
   { name: "Git", icon: FaGitAlt, color: "#F05032", bgColor: "#ffe5e0" },
   { name: "GitHub", icon: FaGithub, color: "#ffffff", bgColor: "#000000" },
-  {name :"Prisma" , icon :SiPrisma , color: "#ffffff", bgColor: "#000000"  }
+  {name :"Prisma" , icon :SiPrisma , color: "#ffffff", bgColor: "#000000"  },
+  {name :"Zod" , icon : SiZod , color: "#00ffff", bgColor: "#000000"}
 ];
 
 
