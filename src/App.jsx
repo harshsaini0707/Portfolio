@@ -7,22 +7,22 @@ import {
   Mail, 
   ExternalLink, 
   Code, 
-  Palette, 
   Database, 
   Server,
-  Smartphone,
-  Globe,
   ChevronDown,
   Menu,
   X,
   Twitter,
-  icons
 } from 'lucide-react';
 import { TypeAnimation } from 'react-type-animation';
 import { GiBrain } from "react-icons/gi";
 import { FaReact ,FaNodeJs ,FaJsSquare,FaHtml5 ,FaBootstrap,FaJava,FaGitAlt ,FaGithub    } from "react-icons/fa";
-import { SiMongodb ,SiTypescript ,SiExpress ,SiTailwindcss ,SiShadcnui,SiPostman ,SiRedux } from "react-icons/si";
+import { SiMongodb ,SiTypescript ,SiExpress ,SiTailwindcss ,SiShadcnui,SiPostman ,SiRedux, SiPrisma } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
+import Agrisphere from '../src/assets/AgriSphere.png'
+import EchoMind from '../src/assets/EchoMind.png'
+import GitSync from '../src/assets/GitSync.png'
+
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
@@ -33,26 +33,26 @@ const Portfolio = () => {
     {
       title: "AgriSphere",
       description: "A full-stack web app empowering farmers with crop suggestions based on soil type and location, a virtual marketplace , weather forecasts, and a collaborative community platform. Features include role-based access, real-time chat, task management, and product listing to enhance agricultural productivity and connectivity",
-      tech:  ["Gemini API","React", "MongoDB", "Tailwind CSS","Express", "Node.js" ,"Weather API " ,"RazorPay"],
+      tech:  ["Gemini API","React", "MongoDB", "Tailwind CSS","Express.js", "Node.js" ,"Weather API " ,"RazorPay"],
       github: "https://github.com/harshsaini0707/AgriSphere",
       live: "https://agri-sphere-mu.vercel.app/",
-      image: 'https://sdmntprsouthcentralus.oaiusercontent.com/files/e2906f363071139_00000000-4c6c-61f7-8888-ea161879edbe/drvs/thumbnail/raw?se=2025-07-15T06%3A00%3A12Z&sp=r&sv=2024-08-04&sr=b&scid=9a5a5ce0-9930-53c8-8323-816d38c473c7&skoid=5cab1ff4-c20d-41dc-babb-df0c2cc21dd4&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-15T02%3A23%3A54Z&ske=2025-07-16T02%3A23%3A54Z&sks=b&skv=2024-08-04&sig=4o05tKOLK8aIInDgPvHDl50s1YVU%2B3W789V/fP5quCo%3D'
+      image: Agrisphere
     },
          {
   title: "GitSync.ai",
   description: "AI-powered Git assistant for code and docs search, meeting insights, commit summaries, and contextual project memory with RAG,  team collaboration.",
-  tech: ["Next.js", "Prisma", "PostgreSQL","Neon","Vector embedding","Langchain" , "Rag" , "Gemini", "Tailwind CSS", "OpenAI", "Cloudinary", "Mistral", "Vercel", "Typescript" , "Zod"],
+  tech: ["Next.js", "Prisma", "PostgreSQL","Vector embedding","Langchain" , "RAG" , "Gemini", "Tailwind CSS", "OpenAI", "Cloudinary", "Mistral", "Vercel", "Typescript" , "Zod"],
   github: "https://github.com/harshsaini0707/Gitsync.ai",
   live: "https://gitsync-ai.vercel.app/",             
-  image: 'https://sdmntprnorthcentralus.oaiusercontent.com/files/3cdf717c2a96ee0_00000000-73e4-622f-8185-a491c19a0be1/drvs/thumbnail/raw?se=2025-07-15T06%3A00%3A12Z&sp=r&sv=2024-08-04&sr=b&scid=00b610be-6e58-5224-b49d-b87858b1b85b&skoid=5cab1ff4-c20d-41dc-babb-df0c2cc21dd4&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-15T02%3A23%3A32Z&ske=2025-07-16T02%3A23%3A32Z&sks=b&skv=2024-08-04&sig=4RcZ2lYH3WQ2dhxlIs9HsQNxkRLvjZjM5BLDe9d656A%3D'
+  image: GitSync
 },
     {
       title: "EchoMind.ai",
       description: "An AI-powered platform that converts audio and PDF files into transcriptions, summaries, and podcasts using Gemini and Sarvam TTS. Enabled multilingual audio generation, OCR-based text extraction, and paragraph-wise voice playback with a user-friendly dashboard.",
-      tech: ["Gemini API","Sarvam TTS model","Cloudinary","React", "MongoDB", "Tailwind CSS","Express", "Node.js" , " pdf-parse"],
+      tech: ["Gemini API","Sarvam TTS model","Cloudinary","React", "MongoDB", "Tailwind CSS","Express.js", "Node.js" , " pdf-parse"],
       github: "https://github.com/harshsaini0707/EchoMind.ai",
       live: "https://echo-mind-ai.vercel.app/",
-      image:  'https://sdmntprwestus3.oaiusercontent.com/files/b507c1d584fd869_00000000-4d78-61fd-999c-bbad962e8047/drvs/thumbnail/raw?se=2025-07-15T06%3A00%3A12Z&sp=r&sv=2024-08-04&sr=b&scid=fc2308ce-bb4f-5b08-aeb2-5134041cfd66&skoid=5cab1ff4-c20d-41dc-babb-df0c2cc21dd4&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-14T12%3A56%3A57Z&ske=2025-07-15T12%3A56%3A57Z&sks=b&skv=2024-08-04&sig=bPUDTNSw4XEmqgycaZVKTAoLmBAExnNUkAPDok33NwQ%3D'
+      image: EchoMind
     },
    
 
@@ -73,12 +73,11 @@ const skills = [
   { name: "BootStrap", icon: FaBootstrap, color: "#7952B3", bgColor: "#f0e8ff" },
   { name: "Shadcn/UI", icon: SiShadcnui, color: "#ffffff", bgColor: "#f0f0f0" },
   { name: "PostMan", icon: SiPostman, color: "#FF6C37", bgColor: "#ffe6dc" },
-  { name: "C", icon: Code, color: "#A8B9CC", bgColor: "#e6f0f7" },
   { name: "Java", icon: FaJava, color: "#007396", bgColor: "#e1ecf4" },
   { name: "Redux Toolkit", icon: SiRedux, color: "#007396", bgColor: "#ffe6dc"},
-  { name: "C++", icon: Code, color: "#00599C", bgColor: "#deeefb" },
   { name: "Git", icon: FaGitAlt, color: "#F05032", bgColor: "#ffe5e0" },
-  { name: "GitHub", icon: FaGithub, color: "#181717", bgColor: "#f5f5f5" }
+  { name: "GitHub", icon: FaGithub, color: "#ffffff", bgColor: "#000000" },
+  {name :"Prisma" , icon :SiPrisma , color: "#ffffff", bgColor: "#000000"  }
 ];
 
 
@@ -249,7 +248,7 @@ const skills = [
         </div>
       </section>
 
-      {/* Skills Section */}
+       {/* Skills Section */}
       <section id="skills" className="py-20 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -257,45 +256,37 @@ const skills = [
             <div className="w-24 h-1 bg-gradient-to-r from-emerald-400 to-blue-400 mx-auto mb-8"></div>
           </div>
           
-          {/* Scrolling Skills Animation */}
-          <div className="relative">
-            <div className="flex space-x-8 animate-scroll">
-              {/* First set of skills */}
+          <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50 mb-12">
+            <div className="flex flex-wrap justify-center gap-6">
               {skills.map((skill, index) => {
                 const IconComponent = skill.icon;
+                const randomDelay = Math.random() * 3;
                 return (
-                  <div key={index} className="flex-shrink-0  backdrop-blur-sm p-6 rounded-xl border border-gray-700/50 hover:border-emerald-400/50 transition-all duration-300 group">
-                    <div className="flex items-center ">
-                      <div className="p-2 rounded-lg group-hover:scale-110 transition-transform duration-300">
-                        <IconComponent size={28} style={{ color: skill.color }} />
-                      </div>
-                      <span className="text-lg font-semibold whitespace-nowrap">{skill.name}</span>
-                    </div>
-                  </div>
-                );
-              })}
-              {/* Duplicate set for seamless scrolling */}
-              {skills.map((skill, index) => {
-                const IconComponent = skill.icon;
-                return (
-                  <div key={`duplicate-${index}`} className="flex-shrink-0 bg-gray-900/70 backdrop-blur-sm p-6 rounded-xl border border-gray-700/50 hover:border-emerald-400/50 transition-all duration-300 group">
-                    <div className="flex items-center space-x-4">
-                      <div className="p-3 bg-gradient-to-br from-emerald-500 to-blue-500 rounded-lg group-hover:scale-110 transition-transform duration-300">
-                        <IconComponent size={24} className="text-white" />
-                      </div>
-                      <span className="text-lg font-semibold whitespace-nowrap">{skill.name}</span>
+                  <div 
+                    key={index} 
+                    className="skill-item relative group cursor-pointer"
+                    style={{
+                      '--delay': `${randomDelay}s`
+                    }}
+                  >
+                    <div className="flex flex-col items-center justify-center p-4 transition-all duration-300 group-hover:scale-110">
+                      <IconComponent 
+                        size={32} 
+                        style={{ color: skill.color }} 
+                        className="mb-2 skill-logo transition-transform duration-300"
+                      />
+                      <span className="text-sm font-semibold text-center text-gray-300 group-hover:text-white transition-colors duration-300">
+                        {skill.name}
+                      </span>
                     </div>
                   </div>
                 );
               })}
             </div>
-            
-            {/* Gradient overlays for smooth edges */}
-
           </div>
 
           {/* Additional Skills Categories */}
-          <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="text-center p-6 bg-gray-900/50 rounded-xl">
               <Code className="mx-auto mb-4 text-emerald-400" size={38} />
               <h3 className="text-lg font-semibold mb-2">Frontend</h3>
@@ -311,33 +302,56 @@ const skills = [
               <h3 className="text-lg font-semibold mb-2">Database</h3>
               <p className="text-gray-400 text-sm">Data Management & Design</p>
             </div>
-
-             <div className="text-center p-6 bg-gray-900/50 rounded-xl">
-  <GiBrain className="mx-auto mb-4 text-purple-400" size={38} />
-  <h3 className="text-lg font-semibold mb-2">AI Integration</h3>
-  <p className="text-gray-400 text-sm">Building intelligent, user-focused solutions.</p>
-</div>
-
-            
+            <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+              <GiBrain className="mx-auto mb-4 text-pink-400" size={38} />
+              <h3 className="text-lg font-semibold mb-2">AI Integration</h3>
+              <p className="text-gray-400 text-sm">Building intelligent solutions</p>
+            </div>
           </div>
         </div>
 
         <style jsx>{`
-          @keyframes scroll {
-            0% {
-              transform: translateX(0);
+          .skill-logo {
+            animation: vibrate 3s ease-in-out infinite;
+            animation-delay: var(--delay, 0s);
+          }
+          
+          @keyframes vibrate {
+            0%, 100% {
+              transform: translate(0);
             }
-            100% {
-              transform: translateX(-50%);
+            10% {
+              transform: translate(-0.5px, -0.5px);
+            }
+            20% {
+              transform: translate(0.5px, -0.5px);
+            }
+            30% {
+              transform: translate(-0.5px, 0.5px);
+            }
+            40% {
+              transform: translate(0.5px, 0.5px);
+            }
+            50% {
+              transform: translate(-0.5px, -0.5px);
+            }
+            60% {
+              transform: translate(0.5px, 0px);
+            }
+            70% {
+              transform: translate(0px, 0.5px);
+            }
+            80% {
+              transform: translate(-0.5px, 0px);
+            }
+            90% {
+              transform: translate(0px, -0.5px);
             }
           }
           
-          .animate-scroll {
-            animation: scroll 30s linear infinite;
-          }
-          
-          .animate-scroll:hover {
+          .skill-item:hover .skill-logo {
             animation-play-state: paused;
+            transform: scale(1.1);
           }
         `}</style>
       </section>
