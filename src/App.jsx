@@ -22,6 +22,7 @@ import { RiNextjsFill } from "react-icons/ri";
 import Agrisphere from '../src/assets/AgriSphere.png'
 import EchoMind from '../src/assets/EchoMind.png'
 import GitSync from '../src/assets/GitSync.png'
+import Resume from '../src/assets/Resume.pdf'
 
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -187,13 +188,18 @@ const skills = [
               I craft intelligent digital products with modern frontend, scalable backend, and AI-powered innovation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
-              <button className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-3 rounded-full transition-all duration-300 flex items-center gap-2 group">
-                <Download size={20} />
-                Download Resume
-                <div className="w-0 group-hover:w-4 transition-all duration-300 overflow-hidden">
-                  <ChevronDown size={16} className="rotate-90" />
-                </div>
-              </button>
+             <a 
+  href={Resume}
+  download="Harsh_Saini_Resume.pdf" 
+  className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-3 rounded-full transition-all duration-300 flex items-center gap-2 group"
+>
+  <Download size={20} />
+  Download Resume
+  <div className="w-0 group-hover:w-4 transition-all duration-300 overflow-hidden">
+    <ChevronDown size={16} className="rotate-90" />
+  </div>
+</a>
+
               <div className="flex gap-4">
                 <a href="https://github.com/harshsaini0707?tab=repositories" className="p-3 bg-gray-800 hover:bg-emerald-600 rounded-full transition-all duration-300 hover:scale-110">
                   <Github size={20} />
